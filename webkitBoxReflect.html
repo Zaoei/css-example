@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: black;
+      }
+      .container {
+        width: 1300px;
+        display: flex;
+        flex-flow: row wrap;
+        align-content: flex-start;
+        justify-content: space-between;
+      }
+
+      .container img {
+        margin-top: 200px;
+        display: block;
+        width: 300px;
+        transform-origin: center;
+        transition: 0.5s;
+        transform: perspective(800px) rotateY(40deg);
+        -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #000)
+      }
+
+      .container:hover img {
+        opacity: 0.1;
+      }
+
+      .container img:hover {
+        transform: perspective(800px) rotateY(0deg);
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./img/Nintendo1.jpg" />
+      <img src="./img/Nintendo2.jpg" />
+      <img src="./img/Nintendo3.jpg" />
+      <img src="./img/Nintendo4.jpg" />
+      <img src="./img/Nintendo5.jpg" />
+      <img src="./img/Nintendo6.jpg" />
+      <img src="./img/Nintendo7.jpg" />
+      <img src="./img/Nintendo8.jpg" />
+    </div>
+  </body>
+</html>
